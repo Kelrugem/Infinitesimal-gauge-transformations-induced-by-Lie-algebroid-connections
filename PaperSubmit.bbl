@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{CurvedYMH}
+Alexei Kotov and Thomas Strobl.
+\newblock Curving {Y}ang-{M}ills-{H}iggs gauge theories.
+\newblock {\em Physical Review D}, 92(8):085032, 2015.
+
+\bibitem{MyThesis}
+Simon-Raphael Fischer.
+\newblock {\em {G}eometry of curved {Y}ang-{M}ills-{H}iggs gauge theories}.
+\newblock PhD thesis, 05/31 2021.
+\newblock ID: unige:152555,
+  https://doi.org/10.13097/archive-ouverte/unige:152555.
+
+\bibitem{hamilton}
+Mark~JD Hamilton.
+\newblock {\em Mathematical {G}auge {T}heory}.
+\newblock Springer, 2017.
+
+\bibitem{mackenzieGeneralTheory}
+K.~Mackenzie.
+\newblock General {T}heory of {L}ie {G}roupoids and {A}lgebroids.
+\newblock {\em London Mathematical Society Lecture Note Series}, 213, 2005.
+
+\bibitem{DaSilva}
+Ana~Cannas Da~Silva and Alan Weinstein.
+\newblock {\em Geometric models for noncommutative algebras}, volume~10.
+\newblock American Mathematical Soc., 1999.
+
+\bibitem{ELeviCivita}
+Mohamed Boucetta.
+\newblock Riemannian geometry of {L}ie algebroids.
+\newblock {\em Journal of the Egyptian Mathematical Society}, 19(1-2):57--70,
+  2011.
+
+\bibitem{Highervectorbundles}
+Janusz Grabowski and Miko{\l}aj Rotkiewicz.
+\newblock Higher vector bundles and multi-graded symplectic manifolds.
+\newblock {\em Journal of Geometry and Physics}, 59(9):1285--1305, 2009.
+
+\bibitem{basicconn}
+Camilo~Arias Abad and Marius Crainic.
+\newblock Representations up to homotopy of {L}ie algebroids.
+\newblock {\em Journal f{\"u}r die reine und angewandte Mathematik (Crelles
+  Journal)}, 2012(663):91--126, 2012.
+
+\bibitem{blaomTangentBundleAsLieGroup}
+Anthony Blaom.
+\newblock Geometric structures as deformed infinitesimal symmetries.
+\newblock {\em Transactions of the American Mathematical Society},
+  358(8):3651--3671, 2006.
+
+\bibitem{meinrenkensplitting}
+Henrique Bursztyn, Hudson Lima, and Eckhard Meinrenken.
+\newblock Splitting theorems for {P}oisson and related structures.
+\newblock {\em Journal f{\"u}r die reine und angewandte Mathematik (Crelles
+  Journal)}, 2017.
+
+\bibitem{EichtrafoKruemmungUrspruenglich}
+Martin Bojowald, Alexei Kotov, and Thomas Strobl.
+\newblock Lie algebroid morphisms, poisson sigma models, and off-shell closed
+  gauge symmetries.
+\newblock {\em Journal of Geometry and Physics}, 54(4):400--426, 2005.
+
+\bibitem{mayerlieAuchEichtrafoStuff}
+Christoph Mayer and Thomas Strobl.
+\newblock Lie algebroid {Y}ang--{M}ills with matter fields.
+\newblock {\em Journal of Geometry and Physics}, 59(12):1613--1623, 2009.
+
+\end{thebibliography}
