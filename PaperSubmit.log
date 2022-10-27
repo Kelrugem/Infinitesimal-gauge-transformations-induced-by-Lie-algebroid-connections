@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  29 OCT 2021 19:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.31)  2 APR 2022 22:15
 entering extended mode
 **./PaperSubmit.tex
 (PaperSubmit.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-07-12>
+L3 programming layer <2021-10-18>
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cl
 s
 Document Class: scrartcl 2021/06/25 v3.34 KOMA-Script document class (article)
@@ -56,9 +56,6 @@ Package scrartcl Info: You've used standard option `11pt'.
 (scrartcl)             If you'd like to set the option with \KOMAoptions,
 (scrartcl)             you'd have to use `fontsize=11pt' there
 (scrartcl)             instead of `11pt', too.
- (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/base\leqno.clo
-File: leqno.clo 2016/12/29 v1.2b Standard LaTeX option (left equation numbers)
-)
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2241.
 
@@ -164,17 +161,13 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/06/28 3.61 The Babel package
-
-(C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/06/28 3.61 Babel common definitions
+Package: babel 2021/10/19 3.65 The Babel package
 \babel@savecnt=\count191
 \U@D=\dimen139
 \l@unhyphenated=\language79
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-)
 \bbl@dirlevel=\count192
 
 *************************************
@@ -250,11 +243,11 @@ Package: amsthm 2020/05/29 v2.20.6
 )
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-07-12 L3 programming layer (loader) 
+Package: expl3 2021-10-18 L3 programming layer (loader) 
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2021-07-12 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count193
 \l__pdf_internal_box=\box52
 ))
@@ -262,7 +255,7 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
-Package: xparse 2021-06-18 L3 Experimental document command parser
+Package: xparse 2021-08-27 L3 Experimental document command parser
 )
 (C:\Users\kelru\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -1401,17 +1394,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 1670--1679
 
 [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
 [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 3233--3237
+Underfull \hbox (badness 10000) in paragraph at lines 3241--3245
 
  []
 
 [53] [54] [55] [56]
-Overfull \hbox (5.00697pt too wide) in paragraph at lines 3418--3419
+Overfull \hbox (5.00697pt too wide) in paragraph at lines 3426--3427
 []\T1/lmr/bx/n/10.95 Acknowledgements: \T1/lmr/m/n/10.95 I want to thank Mark J
 ohn David Hamil-ton, Anna Dall'Acqua, Alessan-
  []
 
-[57] (PaperSubmit.bbl [58]) [59] (PaperSubmit.aux)
+[57] (PaperSubmit.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+[]\T1/lmr/m/n/10.95 Mark JD Hamil-ton.  \T1/lmr/m/it/10.95 Math-e-mat-i-cal Gau
+ge The-ory\T1/lmr/m/n/10.95 .  Springer, 2017.
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 40--44
+[]\T1/lmr/m/n/10.95 Janusz Grabowski and Mikoªaj Rotkiewicz.  Higher vec-tor bu
+n-dles and multi-
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+[]\T1/lmr/m/n/10.95 Christoph Mayer and Thomas Strobl.  Lie al-ge-broid Yang--M
+ills with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+\T1/lmr/m/n/10.95 mat-ter fields.  \T1/lmr/m/it/10.95 Jour-nal of Ge-om-e-try a
+nd Physics\T1/lmr/m/n/10.95 , 59(12):1613, 2009.
+ []
+
+) [59] (PaperSubmit.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1419,16 +1436,16 @@ Package rerunfilecheck Info: File `PaperSubmit.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33894 strings out of 478870
- 681017 string characters out of 2848836
- 1141065 words of memory out of 3000000
- 50838 multiletter control sequences out of 15000+600000
- 517718 words of font info for 162 fonts, out of 8000000 for 9000
+ 34010 strings out of 478907
+ 685018 string characters out of 2851891
+ 1142045 words of memory out of 3000000
+ 50934 multiletter control sequences out of 15000+600000
+ 516856 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,23n,108p,10635b,1269s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}{C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
+:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C
 :/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
 ers/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Us
 ers/kelru/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
@@ -1441,33 +1458,28 @@ pe1/public/lm/lmbx10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/lm/lmbxi10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/lm/lmex10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/lm/lmmi10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmmi5.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmmi6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmmi8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmmi9.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmr10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmr12.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmr6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmr8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmr9.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmri10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmri7.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-m/lmri8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmssbx10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmsy10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmsy6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-m/lmsy8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmsy9.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmtt10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/symbols/msam10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/stix/stix-mathscr.pfb><C:/Users/kelru/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/kelru/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary6.pfb><C:/Users/kelru
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary8.pfb>
-Output written on PaperSubmit.pdf (60 pages, 847577 bytes).
+ype1/public/lm/lmmi6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmmi8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmr10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/lm/lmr12.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/lm/lmr6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmr8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmr9.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmri10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmssbx10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmsy10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmsy6.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmsy8.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmtt10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Users/kelru/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/stix/stix-mathscr.pfb><C:/Users/kelru/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/kelru/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary6.pfb><C:/Users/
+kelru/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary8.pfb>
+Output written on PaperSubmit.pdf (60 pages, 804381 bytes).
 PDF statistics:
- 1726 PDF objects out of 1728 (max. 8388607)
- 295 named destinations out of 1000 (max. 500000)
+ 1671 PDF objects out of 1728 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

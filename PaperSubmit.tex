@@ -1,4 +1,4 @@
-\documentclass[a4paper,oneside,11pt,leqno]{scrartcl} %leqno for left numbering of equations
+\documentclass[a4paper,oneside,11pt]{scrartcl} %leqno for left numbering of equations
 %[a4paper,oneside,12pt]
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -610,7 +610,7 @@ Many notions of vector bundle connections carry over to Lie algebroid connection
 We want to show that a pullback of such connections is in general possible if using the following type of morphism:
 
 \begin{definitions}{Anchor-preserving vector bundle morphism, \newline \cite[\S 4.3, Equation (22); page 157]{mackenzieGeneralTheory}}{DefOfAnchorPreservingStuff}
-Let $E_i\stackrel{\pi_i}{\to} N_i$ ($i \in \{1,2\}$) be two Lie algebroids over smooth manifolds $N_i$. Then we say that a vector bundle morphism $\xi: E_1 \to E_2$ over a smooth map $f: N_1 \to N_2$\footnote{That means $\pi_2 \circ \xi = f \circ \pi_1$.} is \textbf{anchor-preserving} if it satisfies
+Let $E_i\stackrel{\pi_i}{\to} N_i$ ($i \in \{1,2\}$) be two Lie algebroids over smooth manifolds $N_i$. Then we say that a vector bundle morphism $\xi: E_1 \to E_2$ over a smooth map $f: N_1 \to N_2$ (that is, $\pi_2 \circ \xi = f \circ \pi_1$) is \textbf{anchor-preserving} if it satisfies
 \ba\label{EqFuerAnchorBundleMorphisms}
 \mathrm{D}f \circ \rho_{E_1}
 &=
@@ -837,9 +837,9 @@ $\bullet$ In the case of $V = N_2 \times \mathbb{R}$, the trivial line bundle ov
 That is precisely the same proof as in Prop.~\ref{prop:GeneralPullbackAnchorPreserving}; the only difference is just the meaning, $\nu_i$ are fixed sections, but that does not matter in the calculations. Eq.~\eqref{WeakAnchorPreserv} is just the condition about anchor-preservation in the case of a fixed pair of sections, and one uses this equation in the same fashion to how we used an anchor-preserving morphism previously; essentially replace $\nu$ with $\nu_1$ and $\xi(\nu)$ with $\nu_2$ in the proof of Prop.~\ref{prop:GeneralPullbackAnchorPreserving}, and Def.~\eqref{FullPulbackGConnection} is then the definition of $\delta_{\nu_1}$, so, $\delta_{\nu_1}$ plays the role of $\mleft(f^*\mleft( {}^{E_2}\nabla \mright)\mright)_{\nu}$ of the previous proof.
 \end{proof}
 
-\section{Infinitesimal gauge transformations}\label{ClassicalGaugeTrafoDiscussion}
+\section{A revisit of the classical situation}\label{ClassicalGaugeTrafoDiscussion}
 
-We want to express the definition of infinitesimal gauge transformations, as it usually arises in gauge theory, by using Cor.~\ref{cor:VeryGeneralPullbackConnection}. Let us first state how we usually understand infinitesimal gauge transformations in the context of infinitesimal\footnote{That is we assume a gauge or equivalently a trivial principal bundle, too.} Yang-Mills-Higgs gauge theory.
+We want to express the definition of infinitesimal gauge transformations, as it usually arises in gauge theory, by using Cor.~\ref{cor:VeryGeneralPullbackConnection}. Let us first state how we usually understand infinitesimal gauge transformations in the context of infinitesimal Yang-Mills-Higgs gauge theory. That is, without further acknowledgement we assume a global gauge or equivalently a trivial principal bundle.
 
 \subsection{Basic setup}\label{ClassicalBasicSetup}
 
@@ -999,7 +999,7 @@ Recall that $E$ is an action Lie algebroid, and thus, using Eq.~\eqref{ActionAnd
 &=
 \psi(\epsilon)(\Phi),
 \eas
-which is precisely how we defined the infinitesimal gauge transformation of the Higgs field\footnote{Therefore we introduced the minus sign in front of $\varepsilon$.} in Def.~\ref{def:ClassicTrafos}; also $\Phi^*E \cong M \times \mathfrak{g}$ as trivial vector bundle over $M$ such that $\epsilon \in C^\infty(M;\mathfrak{g})$. Eq.~\eqref{ClassicalGaugeTrafoButABitMoreGeneral} is also a generalization of a similar equation for a gauge transformation given in \cite[paragraph before Equation (10); we have a different sign in $\varepsilon$]{CurvedYMH}. However, $\epsilon$ is here induced by $\varepsilon$ which in general depends on $\mathfrak{M}_{\mathfrak{g}}(M;W)$; this implies that the parameter for the infinitesimal gauge transformation may have a gauge transformation on its own; it is straightforward to extend Def.~\ref{def:ClassicTrafos} to $\varepsilon \in \Gamma(\mathrm{ev}^*E)$ as parameter which we are going to assume in the following without further separate definition, similar for the definition of $\Psi_\epsilon$. This technical nuance and generalisation will be important when we later calculate the commutator of infinitesimal gauge transformations.
+which is precisely how we defined the infinitesimal gauge transformation of the Higgs field in Def.~\ref{def:ClassicTrafos}, and therefore we introduced the minus sign in front of $\varepsilon$; also $\Phi^*E \cong M \times \mathfrak{g}$ as trivial vector bundle over $M$ such that $\epsilon \in C^\infty(M;\mathfrak{g})$. Eq.~\eqref{ClassicalGaugeTrafoButABitMoreGeneral} is also a generalization of a similar equation for a gauge transformation given in \cite[paragraph before Equation (10); we have a different sign in $\varepsilon$]{CurvedYMH}. However, $\epsilon$ is here induced by $\varepsilon$ which in general depends on $\mathfrak{M}_{\mathfrak{g}}(M;W)$; this implies that the parameter for the infinitesimal gauge transformation may have a gauge transformation on its own; it is straightforward to extend Def.~\ref{def:ClassicTrafos} to $\varepsilon \in \Gamma(\mathrm{ev}^*E)$ as parameter which we are going to assume in the following without further separate definition, similar for the definition of $\Psi_\epsilon$. This technical nuance and generalisation will be important when we later calculate the commutator of infinitesimal gauge transformations.
 \end{remark}
 
 \begin{proof}[Proof of Cor.~\ref{cor:GaugeTrafoAsPullbackCond}]
@@ -1085,15 +1085,15 @@ L\bigl( \underbrace{[\Psi_\varepsilon, Y]}_{ \mathclap{= 0} }, X_2 \dotsc, X_k \
 =
 0.
 \eas
-Using these relations, we can conclude that the non-trivial information of Def.~\eqref{OriginalFormula} is encoded completely on $\mathfrak{X}(M)$ as a $C^\infty(M)$-module,\footnote{Observe that $\mathcal{L}_{\Psi_\varepsilon}(f) = 0$ for all $f \in C^\infty(M)$.} as given in Def.~\eqref{DefOfGaugeTrafoWithBookkeep}. Therefore one can use Def.~\eqref{DefOfGaugeTrafoWithBookkeep} instead and canonically/trivially extend this definition to the "full" form.
+Using these relations, we can conclude that the non-trivial information of Def.~\eqref{OriginalFormula} is encoded completely on $\mathfrak{X}(M)$ as a $C^\infty(M)$-module, as given in Def.~\eqref{DefOfGaugeTrafoWithBookkeep}; observe that $\mathcal{L}_{\Psi_\varepsilon}(f) = 0$ for all $f \in C^\infty(M)$. Therefore one can use Def.~\eqref{DefOfGaugeTrafoWithBookkeep} instead and canonically/trivially extend this definition to the "full" form.
 %
 %If starting with Def.~\eqref{DefOfGaugeTrafoWithBookkeep}, use that $\Omega^{k,0}\bigl(M \times \mathfrak{M}_{\mathfrak{g}}(M; W); K \bigr)$ is generated by $\Omega^k(M; K)$, and Def.~\ref{DefOfGaugeTrafoWithBookkeep} is making use of that, such that one just needs to check whether this gives; finally observe that $C^\infty(M)$-multilinearity follows because $\mathcal{L}_{\Psi_\varepsilon} f = 0$ for all $f \in C^\infty(M)$ due to the fact that $\Psi_\varepsilon$ is a vector field on $\mathfrak{M}_{\mathfrak{g}}(M;W)$, viewed as a vector field in $M \times \mathfrak{M}_{\mathfrak{g}}(M;W)$. So, $C^\infty(M)$ is not affected by the Leibniz rule in $\delta_{\Psi_\varepsilon}$. The vector fields $Y_1, \dotsc, Y_k$ are similarly unaffected by the Lie derivative of $\mathcal{L}_{\Psi_\varepsilon}$; hence, this is a valid construction.
 \end{remark}
 
-In fact, we recover the infinitesimal gauge transformation $\delta_\epsilon$ by using a canonical flat connection:
+In fact, we recover the infinitesimal gauge transformation $\delta_\epsilon$ by using a canonical flat connection; for the following recall Ex.~\ref{ex:NablaRhoConnection}.:
 
 \begin{theorems}{Recover of classical definition of infinitesimal gauge transformation}{RecoverOfClassicInfgGaugeTrafo}
-Let $M$ be a smooth manifold, $W, K$ vector spaces, and $\mathfrak{g}$ a Lie algebra, equipped with a Lie algebra representation $\psi: \mathfrak{g} \to \mathrm{End}(W)$. We also denote with $E \coloneqq W \times \mathfrak{g}$ the associated action Lie algebroid over $W$, and let $^{E}\nabla = \nabla_\rho$ be the $E$-connection\footnote{Recall Ex.~\ref{ex:NablaRhoConnection}.} induced by the canonical flat connection $\nabla$ of the trivial vector bundle $W \times K$ over $W$, and $\Psi_\varepsilon = (\delta_\varepsilon \Phi, \delta_\varepsilon A)$ for an $\varepsilon \in \Gamma(\mathrm{ev}^*E)$.
+Let $M$ be a smooth manifold, $W, K$ vector spaces, and $\mathfrak{g}$ a Lie algebra, equipped with a Lie algebra representation $\psi: \mathfrak{g} \to \mathrm{End}(W)$. We also denote with $E \coloneqq W \times \mathfrak{g}$ the associated action Lie algebroid over $W$, and let $^{E}\nabla = \nabla_\rho$ be the $E$-connection induced by the canonical flat connection $\nabla$ of the trivial vector bundle $W \times K$ over $W$, and $\Psi_\varepsilon = (\delta_\varepsilon \Phi, \delta_\varepsilon A)$ for an $\varepsilon \in \Gamma(\mathrm{ev}^*E)$.
 
 Then we have
 \ba
@@ -1865,7 +1865,7 @@ since coordinates on $\mathfrak{M}_E(M; N)$ and $M$ are independent, where $\mat
 	+ f \wedge \delta_{\Psi_\varepsilon} (L).
 \ea
 
-$\bullet$ For dual bundles $V^*$ we canonically take the dual connection to ${}^B\nabla$ in order to have Leibniz rules as usual.\footnote{The definition of a dual Lie algebroid connection is as usual.} That also means the following (still keeping the same notation): Let $L \in \mathcal{F}^k_E(M; {}^*V)$ and $T \in \mathcal{F}^0_E(M; {}^*(V^*))$, then in a frame $\mleft( e_a \mright)_a$ of $V$ and $\mleft( f^a \mright)_a$ of $V^*$, $f^b(e_a) = \delta^b_a$, we locally write $L = L^a \otimes {}^*e_a$ and $T = T_b \cdot {}^*f^b$, where $L^a \in \mathcal{F}^k_E(M)$ and $T_b \in \mathcal{F}^0_E(M)$. Then with these conventions, including the previous bullet point,
+$\bullet$ For dual bundles $V^*$ we canonically take the dual connection to ${}^B\nabla$ in order to have Leibniz rules as usual; the definition of a dual Lie algebroid connection is as usual for connections. That also means the following (still keeping the same notation): Let $L \in \mathcal{F}^k_E(M; {}^*V)$ and $T \in \mathcal{F}^0_E(M; {}^*(V^*))$, then in a frame $\mleft( e_a \mright)_a$ of $V$ and $\mleft( f^a \mright)_a$ of $V^*$, $f^b(e_a) = \delta^b_a$, we locally write $L = L^a \otimes {}^*e_a$ and $T = T_b \cdot {}^*f^b$, where $L^a \in \mathcal{F}^k_E(M)$ and $T_b \in \mathcal{F}^0_E(M)$. Then with these conventions, including the previous bullet point,
 \ba
 \delta_{\Psi_\varepsilon} (T(L))
 &=
@@ -2325,7 +2325,7 @@ Since it is about a vector field on $\mathfrak{M}_E(M; N)$, we will classify $\P
 =
 \mleft( - (\Phi_t^*\rho)(\epsilon_t), \mathcal{a}_t \mright).
 \eas
-$(\Phi_0, A_0)$ and $- (\Phi_t^*\rho)(\epsilon_t)$ are fixed, and we show that Eq.~\eqref{EichtrafoVonANochmal} will fix $\mathcal{a}_t$. Without loss of generality let us assume that everything is small and local enough such that we have frames and coordinates, like a frame $\mleft(e_a\mright)_a$ of $E$.\footnote{One could even fix a point $p \in M$ because we just need an interval for $t$ for $\mathrm{d}/\mathrm{d}t$.}
+$(\Phi_0, A_0)$ and $- (\Phi_t^*\rho)(\epsilon_t)$ are fixed, and we show that Eq.~\eqref{EichtrafoVonANochmal} will fix $\mathcal{a}_t$. Without loss of generality let us assume that everything is small and local enough such that we have frames and coordinates, like a frame $\mleft(e_a\mright)_a$ of $E$; one may fix a point $p \in M$ because we just need an interval for $t$ for $\mathrm{d}/\mathrm{d}t$.
 Making use of Prop.~\ref{prop:VariationVonSkalarZeugsEasyPeasy}, we get
 \bas
 \mleft(\delta_{\Psi_\varepsilon} \varpi_2 \mright) (\Phi_t, A_t)
@@ -2493,7 +2493,9 @@ shortly denoted as $\delta_\varepsilon A \coloneqq \delta_{\Psi_\varepsilon} \va
 \leavevmode\newline
 As discussed in Remark \ref{RemDifferentVersionsOfGaugeTrafos} we have seen that $\delta_\varepsilon A^a$ (using a frame $\mleft( e_a \mright)_a$ of $E$) recovers the classical formula of the infinitesimal gauge transformation. However, the total formula, $\delta_\varepsilon A$, does not recover it which is no problem due to that the variation of the Lagrangian just depends on the variation of the components and its variation is independent on whether or not one uses the basic connection in the definition of $\delta_\varepsilon$; for a rigorous discussion about the (generalised) Lagrangian and its gauge invariance see for example \cite{CurvedYMH} and \cite[\S 4]{MyThesis}.
 
-Alternatively, one could use $\nabla_\rho$ as $E$-connection on $E$ instead of $\nabla^{\mathrm{bas}}$ for the definition of $\delta_{\Psi_\varepsilon}$; especially because of results like Thm.~\ref{thm:NewFormulaRecoversOldGaugeTrafoYay} and Thm.~\ref{thm:RecoverOfClassicInfgGaugeTrafo}, which imply that one recovers classical formulas when $\nabla$ is additionally flat.\footnote{A flat connection is locally canonically flat with respect to the trivialization given by a parallel frame; later we will also see that then $E$ is locally an action algebroid and $\nabla$ its canonical flat connection, if $\nabla$ is flat and has vanishing basic curvature.} When using $\nabla_\rho$, the same $\Psi_\varepsilon$ leads to
+Alternatively, one could use $\nabla_\rho$ as $E$-connection on $E$ instead of $\nabla^{\mathrm{bas}}$ for the definition of $\delta_{\Psi_\varepsilon}$; especially because of results like Thm.~\ref{thm:NewFormulaRecoversOldGaugeTrafoYay} and Thm.~\ref{thm:RecoverOfClassicInfgGaugeTrafo}, which imply that one recovers classical formulas if $\nabla$ is additionally flat.
+%\footnote{A flat connection is locally canonically flat with respect to the trivialization given by a parallel frame; later we will also see that then $E$ is locally an action algebroid and $\nabla$ its canonical flat connection, if $\nabla$ is flat and has vanishing basic curvature.} 
+When using $\nabla_\rho$, the same $\Psi_\varepsilon$ leads to
 \ba
 \delta_{\Psi_\varepsilon} \varpi_2
 &=
@@ -2568,10 +2570,15 @@ where vector fields like $\Psi_\varepsilon$ are given by Def.~\ref{def:TotalInfG
 \begin{corollaries}{Independence of $\nabla$}{WennVonAUnabhaengigDannAuchVonNabla}
 Let us assume the same as for Def.~\ref{def:TotalInfGaugeTrafoYayy}, and let $L \in \mathcal{F}^k_E(M; {}^*V)$ ($k \in \mathbb{N}_0$) be independent of $A$, \textit{i.e.}~$L(\Phi,A) = L(\Phi, A^\prime)$ for all $(\Phi,A), (\Phi, A^\prime) \in \mathfrak{M}_E(M; N)$.
 
-Then the definition of $\delta_\varepsilon L$ is independent of $\nabla$.\footnote{But not of ${}^E\nabla$, so, if ${}^E\nabla = \nabla^{\mathrm{bas}}$, then there is still the dependency on $\nabla$ in the role of ${}^E\nabla$.}
+Then the definition of $\delta_\varepsilon L$ is independent of $\nabla$.
 \end{corollaries}
 
-\begin{proof}
+\begin{remark}
+\leavevmode\newline
+The definition of $\delta_\varepsilon L$ is in general not independent of ${}^E\nabla$, so, if ${}^E\nabla = \nabla^{\mathrm{bas}}$, then there is still the dependency on $\nabla$ in the role of ${}^E\nabla$.
+\end{remark}
+
+\begin{proof}[Proof of Cor.\ \ref{cor:WennVonAUnabhaengigDannAuchVonNabla}]
 \leavevmode\newline
 Let $\mleft( e_a \mright)_a$ be a local frame of $V$, and write $L = L^a \otimes {}^*e_a$, then, using that $\delta_\varepsilon = \mathcal{L}_{\Psi_\varepsilon}$ on $\mathcal{F}^k_E(M)$ (recall Remark \ref{RemLeibnizeRegelaufProdukteWeshalbEConnectionNichtWichtigIst}, and $\Psi_\varepsilon$ is given by Def.~\ref{def:TotalInfGaugeTrafoYayy}),
 \bas
@@ -3115,7 +3122,8 @@ for all $\mu, \nu \in \Gamma(E)$.
 
 \begin{remark}\label{RemarkUeberNablaRhoCurvatureForGauegTrafo}
 \leavevmode\newline
-\indent $\bullet$ This discussion, especially Cor.~\ref{cor:FlatnessVonEichtrafos} and Thm.~\ref{thm:CurvatureOfBasicStuffIsEquivalentForGaugeTrafoCurvature}, are generalizations of statements in \cite[especially Prop.~8 and Thm.~1]{EichtrafoKruemmungUrspruenglich} and \cite[especially Eq.~9, 10 and 11; there the $S$ denotes the basic curvature]{mayerlieAuchEichtrafoStuff}.\footnote{The sign of $\varepsilon$ in the gauge transformations there is the opposite of our sign.} In both of these works a coordinate-free formulation of $\delta_\varepsilon A$ was not known, just $\delta_\varepsilon A^a$. It was known that $\delta_\varepsilon A^a$ is dependent on coordinates, but not how it can be written/defined such that it is again an element of $\Omega^1(M; \Phi^*E)$. \cite{EichtrafoKruemmungUrspruenglich} tries to formulate infinitesimal gauge transformations in a covariant way with a completely different approach by assuming a weaker form of equality,\footnote{The closure of the algebra of gauge transformations is formulated as an on-shell condition.} but only for a special situation and only for $\varepsilon$ as an element of $\Phi^*(\Gamma(E))$ (\textit{i.e.}~they only looked at pullback functionals, when we express that in our language). \cite{mayerlieAuchEichtrafoStuff} looks at the set $\Gamma(\Phi^*E)$ for $\varepsilon$ but assumes that $\varepsilon^a$ is independent of $\Phi$ and $A$ which is clearly a coordinate-dependent description, because a change of the pull-back frame would introduce a $\Phi$-dependency of the components $\varepsilon^a$ (in our words, they choose a coordinate-dependent embedding of $\Gamma(\Phi^*E)$ as functionals). In one way or the other, both works arrive at Eq.~\eqref{CoordFuerEichKruemmungsRegel}, but only evaluated at pullback functionals, that is, $R_\delta({}^*\mu, {}^*\nu)A^a=0$ for all $\mu, \nu \in \Gamma(E)$.
+\indent $\bullet$ This discussion, especially Cor.~\ref{cor:FlatnessVonEichtrafos} and Thm.~\ref{thm:CurvatureOfBasicStuffIsEquivalentForGaugeTrafoCurvature}, are generalizations of statements in \cite[especially Prop.~8 and Thm.~1]{EichtrafoKruemmungUrspruenglich} and \cite[especially Eq.~9, 10 and 11; there the $S$ denotes the basic curvature]{mayerlieAuchEichtrafoStuff}; these references use a different sign of $\varepsilon$ in the gauge transformations.
+In both of these works a coordinate-free formulation of $\delta_\varepsilon A$ was not known, just $\delta_\varepsilon A^a$. It was known that $\delta_\varepsilon A^a$ is dependent on coordinates, but not how it can be written/defined such that it is again an element of $\Omega^1(M; \Phi^*E)$. \cite{EichtrafoKruemmungUrspruenglich} tries to formulate infinitesimal gauge transformations in a covariant way with a completely different approach by assuming a weaker form of equality via on-shell conditions, but only for a special situation and only for $\varepsilon$ as an element of $\Phi^*(\Gamma(E))$ (\textit{i.e.}~they only looked at pullback functionals, when we express that in our language). \cite{mayerlieAuchEichtrafoStuff} looks at the set $\Gamma(\Phi^*E)$ for $\varepsilon$ but assumes that $\varepsilon^a$ is independent of $\Phi$ and $A$ which is clearly a coordinate-dependent description, because a change of the pull-back frame would introduce a $\Phi$-dependency of the components $\varepsilon^a$ (in our words, they choose a coordinate-dependent embedding of $\Gamma(\Phi^*E)$ as functionals). In one way or the other, both works arrive at Eq.~\eqref{CoordFuerEichKruemmungsRegel}, but only evaluated at pullback functionals, that is, $R_\delta({}^*\mu, {}^*\nu)A^a=0$ for all $\mu, \nu \in \Gamma(E)$.
 
 What we provide is a coordinate-independent and -free definition of such infinitesimal gauge transformations such that these give a closed algebra; see also the following theorems. Moreover, we have generalized Eq.~\eqref{CoordFuerEichKruemmungsRegel} in form of Eq.~\eqref{DieKruemmungIstNullVonDenEichtrafosGeeeeil}, in sense of not only assuming pullback functionals by defining the pre-bracket $\llbracket \cdot, \cdot \rrbracket$.
 
@@ -3146,7 +3154,7 @@ We now want to generalize Cor.~\ref{cor:FlatnessVonEichtrafos} by using Cor.~\re
 Recall Remark \ref{NotASubalgebraXB}, we do in general not expect that $\Psi_\varepsilon \in \mathfrak{X}^E\bigl( \mathfrak{M}_E(M;N) \bigr)$ builds a subalgebra; however, since we restricted the set of those vector fields by defining $\delta_\varepsilon A$ in Prop.~\ref{prop:VariationOfA}, there may be hope for the structure of a subalgebra; this will be discussed now. 
 
 \begin{theorems}{Bracket of gauge transformations a gauge transformation}{VektorfelderSindZumGlueckGeschlossen}
-Let $M, N$ be smooth manifolds, $E \to N$ a Lie algebroid, $\nabla$ a connection on $E$ with $R^{\mathrm{bas}}_\nabla=0$. Furthermore let $\Psi_\varepsilon$ and $\Psi_\vartheta$ for $\varepsilon, \vartheta \in \mathcal{F}^0_E(M; {}^*E)$ be the unique elements of $\mathfrak{X}^E\bigl( \mathfrak{M}_E(M;N) \bigr)$ as given by Prop.~\ref{prop:VariationOfA}.\footnote{Recall that those $\Psi_\varepsilon$ are the vector fields describing the infinitesimal gauge transformation; see Def.~\ref{def:TotalInfGaugeTrafoYayy}.}
+Let $M, N$ be smooth manifolds, $E \to N$ a Lie algebroid, $\nabla$ a connection on $E$ with $R^{\mathrm{bas}}_\nabla=0$. Furthermore let $\Psi_\varepsilon$ and $\Psi_\vartheta$ for $\varepsilon, \vartheta \in \mathcal{F}^0_E(M; {}^*E)$ be the unique elements of $\mathfrak{X}^E\bigl( \mathfrak{M}_E(M;N) \bigr)$ as given by Prop.~\ref{prop:VariationOfA}. Recall that those $\Psi_\varepsilon$ are the vector fields describing the infinitesimal gauge transformation, based on Def.~\ref{def:TotalInfGaugeTrafoYayy}.
 
 Then
 \ba
@@ -3215,7 +3223,7 @@ Keeping the same situation and notation as in the previous proof, observe that w
 =
 {}^*\mleft( \rho\mleft( \nabla^{\mathrm{bas}}_\nu \mu \mright) \mright)
 \eas
-for all $\mu, \nu \in \Gamma(E)$, hence,\footnote{Recall Eq.~\eqref{EqLieKlammerAufPullBackSections}.}
+for all $\mu, \nu \in \Gamma(E)$, hence, also recall Eq.~\eqref{EqLieKlammerAufPullBackSections},
 \bas
 \delta_{{}^*\nu} \delta_{{}^*\mu} \Phi
 	- \delta_{{}^*\mu} \delta_{{}^*\nu} \Phi
@@ -3424,6 +3432,10 @@ This publication was produced within the scope of the NCCR SwissMAP which was fu
 This work was also supported by the LABEX MILYON (ANR-10-LABX-0070) of Universit\'{e} de Lyon, within the program "Investissements d'Avenir" (ANR-11-IDEX-0007) operated by the French National Research Agency (ANR), for which I am grateful.
 
 The paper was then finalised as part of my post-doc fellowship at the National Center for Theoretical Sciences (NCTS), which is why I also want to thank the NCTS.
+
+\textbf{Conflict of Interest:} The author has no conflicts to disclose.
+
+\textbf{Data Availability Statement:} Data sharing is not applicable to this article as no new data were created or analyzed in this study.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Hier beginnt der Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
