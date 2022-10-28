@@ -396,9 +396,65 @@ No. 1, Sec. 4, Roosevelt Rd., Taipei City 106, Taiwan Room 503, Cosmology Buildi
 
 \section{Introduction}
 
-Alexei Kotov and Thomas Strobl formulated an infinitesimal gauge theory, using Lie algebroids to describe the structural data, called curved Yang-Mills-Higgs gauge theories: Essentially, the structural Lie algebra equipped with an action on a manifold $N$ of values of physical fields like the Higgs field is replaced by a general Lie algebroid $E \to N$. We introduce Lie algebroids later, but one possible difference is that now we can have structure functions instead of constants as usually in gauge theory and particle physics.
+This paper's research concerns an aspect of \textbf{curved Yang-Mills-Higgs gauge theories}, originally introduced by Alexei Kotov and Thomas Strobl in \cite{CurvedYMH}, where essentially the structural Lie algebra together with its action on the manifold $N$ of values of the Higgs fields is replaced by a general Lie algebroid $E \to N$:
 
-We will neither describe nor introduce such gauge theories here in full details, see for example \cite{CurvedYMH} and the references therein for a summary or my Ph.D.~thesis \cite{MyThesis} for a thorough introduction and rediscovery of curved Yang-Mills-Higgs gauge theories, where the results of this paper were also presented. However, we want to provide a generalized formulation of gauge transformations, independently of curved Yang-Mills-Higgs gauge theories, although highly motivated by my own studies of such theories. This definition serves as a coordinate-free generalisation of infinitesimal gauge transformations, useful for theories like curved Yang-Mills-Higgs gauge theories and may even motivate the formulation of such theories.
+\begin{definitions*}{Lie algebroid,  \cite[reduced definition of \S 16.1, page 113]{DaSilva}}
+%\leavevmode\newline
+Let $E \to N$ be a real vector bundle. Then $E$ is a smooth \textbf{Lie algebroid} if there is a bundle map $\rho: E \to \mathrm{T}N$, called the \textbf{anchor}, and a Lie algebra structure on $\Gamma(E)$ with Lie bracket $\left[ \cdot, \cdot \right]_E$ satisfying\footnote{With $\Gamma(E)$ I denote the space of sections of a vector bundle E, and with $\mathrm{T}N$ the tangent bundle of $N$.}
+\begin{align*}
+  \left[\mu, f \nu\right]_E = f \left[\mu, \nu\right]_E + \mathcal{L}_{\rho(\mu)}(f) ~ \nu
+\end{align*}
+for all $f \in C^\infty(N)$ and $\mu, \nu \in \Gamma(E)$, where $\mathcal{L}_{\rho(\mu)}(f)$ is the action of the vector field $\rho(\mu)$ on the function $f$ by derivation.
+\end{definitions*}
+
+The idea of replacing Lie algebras with Lie algebroids was proposed by Thomas Strobl in \cite{OriginofCYMH}, with further understanding of the involved gauge transformations in \cite{mayer2009lie}; eventually, this type of infinitesimal gauge theory got summarised and finalised in \cite{CurvedYMH}. My Ph.D.\ thesis was devoted to this type of infinitesimal gauge theory, attempting to find new (physical) examples and understanding the geometry of this infinitesimal gauge theory; see \cite{My1stpaper} and \cite{MyThesis}.
+
+A short summary of this type of generalized infinitesimal gauge theory follows; we have the following ingredients:
+\begin{itemize}
+	\item $M$ a spacetime;
+	\item $N$ a smooth manifold, serves as set for the values of the Higgs field $\Phi: M \to N$;
+	\item $E \to N$ a Lie algebroid with anchor $\rho$, replacing the structural Lie algebra $\mathfrak{g}$ and its action $\gamma: \mathfrak{g} \to \mathfrak{X}(N)$ of the classical formulation, where $\mathfrak{X}$ denotes the set of vector fields in this work;
+	\item a vector bundle connection $\nabla$ on $E$;
+	\item a fibre metric $\kappa$ on $E$, as a substitute of the ad-invariant scalar product on $\mathfrak{g}$;
+	\item a Riemannian metric $g$ on $N$, replacing the scalar product on the vector space in which the Higgs field usually has values in and which is invariant under the action of $\gamma$, used for the kinetic term of $\Phi$ which is minimally coupled to the field of gauge bosons $A \in \Omega^1(M; \Phi^*E)$ (1-form on $M$ with values in $\Phi^*E$);
+	\item a 2-form on $N$ with values in $E$, $\zeta \in \Omega^2(N;E)$, an additional contribution to the field strength of $A$.
+\end{itemize}
+
+Infinitesimal gauge invariance of the corresponding Yang-Mills type functional leads to two \textbf{infinitesimal compatibility conditions} and two metric compatibilities to be satisfied between these structures, and one can show that this generalizes the typical formalism of infinitesimal Yang-Mills-Higgs gauge theory.
+%If the connection on $E$ is flat, the compatibilities imply that the Lie algebroid is locally an action Lie algebroid:
+%
+%\begin{definitions*}{Action Lie algebroids, \cite[\S 16.2, Example 5; page 114]{DaSilva}}
+%Let $\mleft(\mathfrak{g}, \mleft[\cdot, \cdot \mright]_{\mathfrak{g}}\mright)$ be a Lie algebra equipped with a Lie algebra action $\gamma: \mathfrak{g} \to \mathfrak{X}(N)$ on a smooth manifold $N$. A \textbf{transformation Lie algebroid} or \textbf{action Lie algebroid} is defined as the bundle $E \coloneqq N \times \mathfrak{g}$ over $N$ with anchor
+%\bas
+%\rho(p, v) &\coloneqq \gamma(v)|_p
+%\eas
+%for $(p, v) \in E$, and Lie bracket
+%\bas
+	%\mleft.\mleft[\mu, \nu\mright]_E\mright|_p
+	%&\coloneqq 
+	%\mleft[\mu_p, \nu_p\mright]_{\mathfrak{g}}
+		%+ \mleft.\mleft(\mathcal{L}_{\gamma(\mu(p))}(\nu^a) - \mathcal{L}_{\gamma(\nu(p))}(\mu^a) \mright)\mright|_p ~ e_a
+%\eas
+	%for all $p \in N$ and $\mu, \nu \in \Gamma(E)$, where one views a section $\mu \in \Gamma(E)$ as a map $\mu: N \to \mathfrak{g}$, and $\mleft( e_a \mright)_a$ is some arbitrary frame of constant sections.
+%\end{definitions*}
+%
+%As it is shown in the mentioned references for this type of infinitesimal gauge theory, one gets back to the standard Yang-Mills-Higgs gauge theory if additionally $\zeta \equiv 0$. Thus, the theory represents a covariantized version of gauge theory equipped with an additional 2-form $\zeta$. If $\nabla$ is flat we say in general that we have a \textbf{pre-classical} gauge theory, and if additionally $\zeta \equiv 0$ we have a \textbf{classical} gauge theory.
+%
+%%The 2-form $\zeta$ is needed to allow non-flat $\nabla$, because otherwise only flat $\nabla$ could satisfy the compatibility conditions. But $\zeta$ is not just an auxiliary map, in \cite{MyThesis} I have shown that there is also a class of \textbf{field redefinitions} for the classical formulation of gauge theory. This field redefinition breaks the gauge invariance; so, in order to keep gauge invariance, one needs to add $\zeta$ to the field strength, and at the same time one achieves a richer framework for gauge theories. It is then natural to study whether there is an infinitesimal gauge theory where $\zeta$ is non-zero and cannot be transformed to zero by the mentioned field redefinition.
+%
+%Alexei Kotov and Thomas Strobl formulated an infinitesimal gauge theory, using Lie algebroids to describe the structural data, called curved Yang-Mills-Higgs gauge theories: Essentially, the structural Lie algebra equipped with an action on a manifold $N$ of values of physical fields like the Higgs field is replaced by a general Lie algebroid $E \to N$. We introduce Lie algebroids later, but one possible difference is that now we can have structure functions instead of constants as usually in gauge theory and particle physics.
+
+We will neither describe nor introduce such gauge theories here in full details, see the previously mentioned references. However, we want to discuss its related notion of infinitesimal gauge transformation, which is for example summarised in \cite[Eq.\ (10)]{CurvedYMH} as
+\bas
+\delta A^a
+&=
+\mathrm{d}\varepsilon^a
+	+ \mleft(C^a_{bc}\circ\Phi\mright) A^b \varepsilon^c
+	+ \omega^a_{bi} \varepsilon^b \mleft(\mathfrak{D}^A\Phi\mright)^i,
+\eas
+where the components are w.r.t.\ (the pullback frame of) a local frame $\mleft( e_a \mright)_a$ of $E$ and coordinate vector fields $\mleft( \partial_i \mright)_i$ on $N$,
+
+provide a generalized formulation of gauge transformations, independently of curved Yang-Mills-Higgs gauge theories, although highly motivated by my own studies of such theories. This definition serves as a coordinate-free generalisation of infinitesimal gauge transformations, useful for theories like curved Yang-Mills-Higgs gauge theories and may even motivate the formulation of such theories.
 
 Section \ref{BasicDefinitions} provides some basic definitions and notions, while Section \ref{ClassicalGaugeTrafoDiscussion} is generally about how one can reformulate infinitesimal gauge transformations, using Lie algebroid connections, especially in the context of action Lie algebroids, also known as transformation Lie algebroids. The Higgs field will be a smooth map $M \to N$, where $M$ plays the role of the spacetime, and we will motivate that it is natural to think of an action Lie algebroid defined over $N$, thus, the general description uses a Lie algebroid $E$ over $N$. In order to define infinitesimal gauge transformations as derivations on functionals depending on $M$, we are going to make a pullback of an $E$-connection; which is why we discuss in the previous Section \ref{PullbacksOfEConnections} under which conditions the pullback of Lie algbebroid connections is possible. Furthermore, while Subsection \ref{ClassicalBasicSetup} is repeating the typical definition of infinitesimal gauge transformations, we will see in Subsection \ref{ClassicalWithLieAlgebroidConnections} that the definition of the infinitesimal gauge transformation of the Higgs field has a certain 1:1 correspondence to the existence of the pullback of Lie algebroid connections.
 
@@ -664,10 +720,10 @@ We may sometimes rewrite the right-hand side of Eq.~\eqref{GeneralPullbackDef} t
 to emphasise that $\xi(\nu) \in \Gamma(f^*E_2)$, where we view ${}^{E_2}\nabla v$ as a vector bundle morphism $E_2 \to V$, hence, $f^*\mleft( 	{}^{E_2}\nabla v \mright)$ gives a map $\Gamma(f^*E_2) \to \Gamma(f^*V)$.
 \end{remark}
 
-\begin{proof}
+\begin{proof}[Proof of Prop.\ \ref{prop:GeneralPullbackAnchorPreserving}]
 %[Sketch of proof of Prop.~\ref{prop:FirstEPullBACkConnectionFormula}]
 \leavevmode\newline
-The proof is basically the same as for pullbacks of vector bundle connections. The idea is the following: As usual, the idea is that the pullbacks of sections, $f^*v$ ($v \in \Gamma(V)$), generate $\Gamma(f^*V)$. Thus, Eq~\eqref{GeneralPullbackDef} defines the $E_1$-connection uniquely, that is, sections $w$ of $f^*V$ are determined by sums of elements of the form $h \cdot f^*v$, $h \in C^\infty(N_1)$, and by the Leibniz rule any $E_1$-connection $f^*\mleft( {}^{E_2}\nabla \mright)$ satisfying Eq.~\eqref{GeneralPullbackDef} also satisfies
+The proof is basically the same as for pullbacks of vector bundle connections. As usual, the idea is that the pullbacks of sections, $f^*v$ ($v \in \Gamma(V)$), generate $\Gamma(f^*V)$. Thus, Eq~\eqref{GeneralPullbackDef} defines the $E_1$-connection uniquely, that is, sections $w$ of $f^*V$ are determined by sums of elements of the form $h \cdot f^*v$, $h \in C^\infty(N_1)$, and by the Leibniz rule any $E_1$-connection $f^*\mleft( {}^{E_2}\nabla \mright)$ satisfying Eq.~\eqref{GeneralPullbackDef} also satisfies
 \bas
 \mleft(f^*\mleft( {}^{E_2}\nabla \mright)\mright)_{\nu} (h ~ f^*v)
 &=

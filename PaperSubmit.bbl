@@ -6,6 +6,30 @@ Alexei Kotov and Thomas Strobl.
 \newblock {\em Physical Review D}, 92(8):085032, 2015.
 \newblock https://doi.org/10.1103/PhysRevD.92.085032.
 
+\bibitem{DaSilva}
+Ana~Cannas Da~Silva and Alan Weinstein.
+\newblock {\em Geometric models for noncommutative algebras}, volume~10.
+\newblock American Mathematical Soc., 1999.
+
+\bibitem{OriginofCYMH}
+Thomas Strobl.
+\newblock Algebroid {Y}ang-{M}ills theories.
+\newblock {\em Physical review letters}, 93(21):211601, 2004.
+\newblock https://doi.org/10.1103/PhysRevLett.93.211601.
+
+\bibitem{mayer2009lie}
+Christoph Mayer and Thomas Strobl.
+\newblock Lie algebroid {Y}ang--{M}ills with matter fields.
+\newblock {\em Journal of Geometry and Physics}, 59(12):1613--1623, 2009.
+\newblock https://doi.org/10.1016/j.geomphys.2009.07.018.
+
+\bibitem{My1stpaper}
+Simon-Raphael Fischer.
+\newblock Curved {Y}ang–{M}ills–{H}iggs gauge theories in the case of
+  massless gauge bosons.
+\newblock {\em Journal of Geometry and Physics}, 162:104104, 2021.
+\newblock https://doi.org/10.1016/j.geomphys.2021.104104.
+
 \bibitem{MyThesis}
 Simon-Raphael Fischer.
 \newblock {\em {G}eometry of curved {Y}ang-{M}ills-{H}iggs gauge theories}.
@@ -25,35 +49,31 @@ K.~Mackenzie.
 \newblock {\em London Mathematical Society Lecture Note Series}, 213, 2005.
 \newblock https://doi.org/10.1017/CBO9781107325883.
 
-\bibitem{DaSilva}
-Ana~Cannas Da~Silva and Alan Weinstein.
-\newblock {\em Geometric models for noncommutative algebras}, volume~10.
-\newblock American Mathematical Soc., 1999.
-
 \bibitem{ELeviCivita}
 Mohamed Boucetta.
 \newblock Riemannian geometry of {L}ie algebroids.
-\newblock {\em Journal of the Egyptian Mathematical Society}, 19(1-2):57, 2011.
+\newblock {\em Journal of the Egyptian Mathematical Society}, 19(1-2):57--70,
+  2011.
 \newblock https://doi.org/10.1016/j.joems.2011.09.009.
 
 \bibitem{Highervectorbundles}
 Janusz Grabowski and Miko{\l}aj Rotkiewicz.
 \newblock Higher vector bundles and multi-graded symplectic manifolds.
-\newblock {\em Journal of Geometry and Physics}, 59(9):1285, 2009.
+\newblock {\em Journal of Geometry and Physics}, 59(9):1285--1305, 2009.
 \newblock https://doi.org/10.1016/j.geomphys.2009.06.009.
 
 \bibitem{basicconn}
 Camilo~Arias Abad and Marius Crainic.
 \newblock Representations up to homotopy of {L}ie algebroids.
 \newblock {\em Journal f{\"u}r die reine und angewandte Mathematik (Crelles
-  Journal)}, 2012(663):91, 2012.
+  Journal)}, 2012(663):91--126, 2012.
 \newblock https://doi.org/10.1515/CRELLE.2011.095.
 
 \bibitem{blaomTangentBundleAsLieGroup}
 Anthony Blaom.
 \newblock Geometric structures as deformed infinitesimal symmetries.
-\newblock {\em Transactions of the American Mathematical Society}, 358(8):3651,
-  2006.
+\newblock {\em Transactions of the American Mathematical Society},
+  358(8):3651--3671, 2006.
 \newblock https://doi.org/10.1090/S0002-9947-06-04057-8.
 
 \bibitem{meinrenkensplitting}
@@ -67,13 +87,13 @@ Henrique Bursztyn, Hudson Lima, and Eckhard Meinrenken.
 Martin Bojowald, Alexei Kotov, and Thomas Strobl.
 \newblock Lie algebroid morphisms, poisson sigma models, and off-shell closed
   gauge symmetries.
-\newblock {\em Journal of Geometry and Physics}, 54(4):400, 2005.
+\newblock {\em Journal of Geometry and Physics}, 54(4):400--426, 2005.
 \newblock https://doi.org/10.1016/j.geomphys.2004.11.002.
 
 \bibitem{mayerlieAuchEichtrafoStuff}
 Christoph Mayer and Thomas Strobl.
 \newblock Lie algebroid {Y}ang--{M}ills with matter fields.
-\newblock {\em Journal of Geometry and Physics}, 59(12):1613, 2009.
+\newblock {\em Journal of Geometry and Physics}, 59(12):1613--1623, 2009.
 \newblock https://doi.org/10.1016/j.geomphys.2009.07.018.
 
 \end{thebibliography}
