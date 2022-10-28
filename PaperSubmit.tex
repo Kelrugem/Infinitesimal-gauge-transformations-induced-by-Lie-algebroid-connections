@@ -420,33 +420,35 @@ A short summary of this type of generalized infinitesimal gauge theory follows; 
 	\item a 2-form on $N$ with values in $E$, $\zeta \in \Omega^2(N;E)$, an additional contribution to the field strength of $A$.
 \end{itemize}
 
-Infinitesimal gauge invariance of the corresponding Yang-Mills type functional leads to two \textbf{infinitesimal compatibility conditions} and two metric compatibilities to be satisfied between these structures, and one can show that this generalizes the typical formalism of infinitesimal Yang-Mills-Higgs gauge theory.
-%If the connection on $E$ is flat, the compatibilities imply that the Lie algebroid is locally an action Lie algebroid:
+Infinitesimal gauge invariance of the corresponding Yang-Mills type functional leads to two \textbf{infinitesimal compatibility conditions} and two metric compatibilities to be satisfied between these structures.
+%and one can show that this generalizes the typical formalism of infinitesimal Yang-Mills-Higgs gauge theory.
+If the connection $\nabla$ on $E$ is flat, these conditions imply that the Lie algebroid is locally an action Lie algebroid:
+
+\begin{definitions*}{Action Lie algebroids, \cite[\S 16.2, Example 5; page 114]{DaSilva}}
+Let $\mleft(\mathfrak{g}, \mleft[\cdot, \cdot \mright]_{\mathfrak{g}}\mright)$ be a Lie algebra equipped with a Lie algebra action $\gamma: \mathfrak{g} \to \mathfrak{X}(N)$ on a smooth manifold $N$. A \textbf{transformation Lie algebroid} or \textbf{action Lie algebroid} is defined as the bundle $E \coloneqq N \times \mathfrak{g}$ over $N$ with anchor
+\bas
+\rho(p, v) &\coloneqq \gamma(v)|_p
+\eas
+for $(p, v) \in E$, and Lie bracket
+\bas
+	\mleft.\mleft[\mu, \nu\mright]_E\mright|_p
+	&\coloneqq 
+	\mleft[\mu_p, \nu_p\mright]_{\mathfrak{g}}
+		+ \mleft.\mleft(\mathcal{L}_{\gamma(\mu(p))}(\nu^a) - \mathcal{L}_{\gamma(\nu(p))}(\mu^a) \mright)\mright|_p ~ e_a
+\eas
+	for all $p \in N$ and $\mu, \nu \in \Gamma(E)$, where one views a section $\mu \in \Gamma(E)$ as a map $\mu: N \to \mathfrak{g}$, and $\mleft( e_a \mright)_a$ is some arbitrary frame of constant sections of $E$.
+\end{definitions*}
+
+As it is shown in the mentioned references for this type of infinitesimal gauge theory, one gets back to the standard Yang-Mills-Higgs gauge theory if additionally $\zeta \equiv 0$. Thus, the theory represents a covariantized version of gauge theory equipped with an additional 2-form $\zeta$, especially $\nabla$ does not need to be flat for achieving a gauge-invariant Yang-Mills-Higgs Lagrangian, this is the most distinguished contrast to the "classical" formalism of such gauge theories which are related to flat $\nabla$. That $\nabla$ can be non-flat while preserving infinitesimal gauge-invariance, is due to the contribution of $\zeta$ to the Field strength; in fact, if $\zeta \equiv 0$, then one of the infinitesimal compatibility conditions imply flatness of $\nabla$.
+%If $\nabla$ is flat we say in general that we have a \textbf{pre-classical} gauge theory, and if additionally $\zeta \equiv 0$ we have a \textbf{classical} gauge theory.
 %
-%\begin{definitions*}{Action Lie algebroids, \cite[\S 16.2, Example 5; page 114]{DaSilva}}
-%Let $\mleft(\mathfrak{g}, \mleft[\cdot, \cdot \mright]_{\mathfrak{g}}\mright)$ be a Lie algebra equipped with a Lie algebra action $\gamma: \mathfrak{g} \to \mathfrak{X}(N)$ on a smooth manifold $N$. A \textbf{transformation Lie algebroid} or \textbf{action Lie algebroid} is defined as the bundle $E \coloneqq N \times \mathfrak{g}$ over $N$ with anchor
-%\bas
-%\rho(p, v) &\coloneqq \gamma(v)|_p
-%\eas
-%for $(p, v) \in E$, and Lie bracket
-%\bas
-	%\mleft.\mleft[\mu, \nu\mright]_E\mright|_p
-	%&\coloneqq 
-	%\mleft[\mu_p, \nu_p\mright]_{\mathfrak{g}}
-		%+ \mleft.\mleft(\mathcal{L}_{\gamma(\mu(p))}(\nu^a) - \mathcal{L}_{\gamma(\nu(p))}(\mu^a) \mright)\mright|_p ~ e_a
-%\eas
-	%for all $p \in N$ and $\mu, \nu \in \Gamma(E)$, where one views a section $\mu \in \Gamma(E)$ as a map $\mu: N \to \mathfrak{g}$, and $\mleft( e_a \mright)_a$ is some arbitrary frame of constant sections.
-%\end{definitions*}
-%
-%As it is shown in the mentioned references for this type of infinitesimal gauge theory, one gets back to the standard Yang-Mills-Higgs gauge theory if additionally $\zeta \equiv 0$. Thus, the theory represents a covariantized version of gauge theory equipped with an additional 2-form $\zeta$. If $\nabla$ is flat we say in general that we have a \textbf{pre-classical} gauge theory, and if additionally $\zeta \equiv 0$ we have a \textbf{classical} gauge theory.
-%
-%%The 2-form $\zeta$ is needed to allow non-flat $\nabla$, because otherwise only flat $\nabla$ could satisfy the compatibility conditions. But $\zeta$ is not just an auxiliary map, in \cite{MyThesis} I have shown that there is also a class of \textbf{field redefinitions} for the classical formulation of gauge theory. This field redefinition breaks the gauge invariance; so, in order to keep gauge invariance, one needs to add $\zeta$ to the field strength, and at the same time one achieves a richer framework for gauge theories. It is then natural to study whether there is an infinitesimal gauge theory where $\zeta$ is non-zero and cannot be transformed to zero by the mentioned field redefinition.
+%The 2-form $\zeta$ is needed to allow non-flat $\nabla$, because otherwise only flat $\nabla$ could satisfy the compatibility conditions. But $\zeta$ is not just an auxiliary map, in \cite{MyThesis} I have shown that there is also a class of \textbf{field redefinitions} for the classical formulation of gauge theory. This field redefinition breaks the gauge invariance; so, in order to keep gauge invariance, one needs to add $\zeta$ to the field strength, and at the same time one achieves a richer framework for gauge theories. It is then natural to study whether there is an infinitesimal gauge theory where $\zeta$ is non-zero and cannot be transformed to zero by the mentioned field redefinition.
 %
 %Alexei Kotov and Thomas Strobl formulated an infinitesimal gauge theory, using Lie algebroids to describe the structural data, called curved Yang-Mills-Higgs gauge theories: Essentially, the structural Lie algebra equipped with an action on a manifold $N$ of values of physical fields like the Higgs field is replaced by a general Lie algebroid $E \to N$. We introduce Lie algebroids later, but one possible difference is that now we can have structure functions instead of constants as usually in gauge theory and particle physics.
 
 We will neither describe nor introduce such gauge theories here in full details, see the previously mentioned references. However, we want to discuss its related notion of infinitesimal gauge transformation, which is for example summarised in \cite[Eq.\ (10)]{CurvedYMH} as
 \bas
-\delta A^a
+\delta_\varepsilon A^a
 &=
 \mathrm{d}\varepsilon^a
 	+ \mleft(C^a_{bc}\circ\Phi\mright) A^b \varepsilon^c
